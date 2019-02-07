@@ -1,3 +1,4 @@
+require "pry" 
 class CashRegister
   attr_accessor :discount, :total
   def initialize(discount = 0)
@@ -19,6 +20,7 @@ class CashRegister
   def apply_discount()
     if discount > 0
       with_discount = @total - (@total/@discount)
+      binding.pry
       "After the discount, the total comes to $#{with_discount}."
     else
       "There is no discount to apply."
