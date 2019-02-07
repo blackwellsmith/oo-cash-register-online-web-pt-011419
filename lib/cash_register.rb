@@ -5,17 +5,6 @@ class CashRegister
     @total = 0
     @discount = discount
   end
-  
-  #def total
-   # if @discount > 0
-     #  discount_amount = @total * (@discount/100.00)
-     #  amount = @total - discount_amount
-      
-   # else 
-    #  amount = @total
-  #  end
-   # amount
-  #end
   def add_item(title, price, quantity = 1)
     previous_total = @total
     @total = @total + (price*(quantity))
