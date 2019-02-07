@@ -3,6 +3,8 @@ class CashRegister
   def initialize(cash_register_with_discount = cash_register)
      @total = 0
   end
+  def discount(discount)
+    @discount = discount
   def total() #returns correct total
     
     
