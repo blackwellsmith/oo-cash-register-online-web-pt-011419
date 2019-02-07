@@ -19,7 +19,8 @@ class CashRegister
   end
   def apply_discount
     if discount > 0
-      with_discount = @total - (@total/@discount)
+      discount_amount
+      with_discount = @total - (@total/@discount/100)
      # binding.pry
       "After the discount, the total comes to $#{with_discount}."
     else
