@@ -5,10 +5,11 @@ class CashRegister
     @total = 0
     @discount = discount
   end
-  def total
-    if @discount > 0
+  #def total
+   # if @discount > 0
+       discount_amount = @total * (@discount/100.00)
+       amount = @total - discount_amount
       
-      amount = @total - (@total/@discount)
     else 
       amount = @total
     end
