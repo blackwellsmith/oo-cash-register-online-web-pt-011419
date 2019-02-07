@@ -11,5 +11,5 @@ class CashRegister
       amount = @total
     end
     amount
-  def
+  end
 end
