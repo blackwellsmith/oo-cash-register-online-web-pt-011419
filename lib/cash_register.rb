@@ -1,11 +1,12 @@
 require "pry" 
 class CashRegister
   attr_accessor :discount, :total
+  items_array = []
   def initialize(discount = 0)
     @total = 0
     @discount = discount
   end
-  items_array = []
+  
   #def total
    # if @discount > 0
      #  discount_amount = @total * (@discount/100.00)
