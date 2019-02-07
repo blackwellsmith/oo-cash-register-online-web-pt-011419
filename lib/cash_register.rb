@@ -21,5 +21,6 @@ class CashRegister
       @total =  @total - (@total/@discount)
       with_discount = @total
       puts "After the discount, the total comes to #{with_discount}."
+    end 
   end
 end
