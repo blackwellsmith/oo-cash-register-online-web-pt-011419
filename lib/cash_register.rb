@@ -32,8 +32,7 @@ class CashRegister
       "There is no discount to apply."
     end 
   end
-  def items
+  def items 
     items_array
-    
-  end
+end
 end
