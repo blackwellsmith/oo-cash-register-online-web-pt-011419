@@ -4,7 +4,7 @@ class CashRegister
     @total = 0
     @discount = discount
   end
-  def total()
+  def total
     if @discount > 0
       amount = @total - (@total/@discount)
     else 
