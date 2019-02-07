@@ -5,6 +5,7 @@ class CashRegister
     @total = 0
     @discount = discount
   end
+  items_array = []
   #def total
    # if @discount > 0
      #  discount_amount = @total * (@discount/100.00)
@@ -16,6 +17,7 @@ class CashRegister
    # amount
   #end
   def add_item(title, price, quantity = 1)
+    items_array << title
     previous_total = @total
     @total = @total + (price*(quantity))
   end
@@ -31,6 +33,7 @@ class CashRegister
     end 
   end
   def items
+    items_array
     
   end
 end
