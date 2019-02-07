@@ -18,7 +18,7 @@ class CashRegister
   end
   def apply_discount()
     if discount > 0
-      
+      with_discount = 
     puts "After the discount, the total comes to #{with_discount}."
   end
 end
