@@ -34,6 +34,6 @@ class CashRegister
     end 
   end
   def items 
-    items_array
+    
 end
 end
