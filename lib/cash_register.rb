@@ -12,7 +12,7 @@ class CashRegister
     end
     amount
   end
-  def add_item
+  def add_item(title, price, quantity = 1)
     previous_total = @total
     @total = @total + (price*(quantity = 1))
   end 
