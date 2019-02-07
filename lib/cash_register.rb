@@ -21,9 +21,9 @@ class CashRegister
     if discount > 0
       discount_amount = @total * (@discount/100.00)
       @total = @total - discount_amount
-      
+      @total = @total.to_i
       #binding.pry
-      "After the discount, the total comes to $#{@total.to_i}."
+      "After the discount, the total comes to $#{@total}."
     else
       "There is no discount to apply."
     end 
