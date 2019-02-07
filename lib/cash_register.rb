@@ -20,7 +20,7 @@ class CashRegister
     if discount > 0
       @total 
       with_discount = @total
-      puts "After the discount, the total comes to #{with_discount}."
+      "After the discount, the total comes to #{with_discount}."
     else
       puts "There is no discount to apply."
     end 
